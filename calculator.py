@@ -19,32 +19,50 @@ while True:
 		print("Start with arithmatic function!")
 
 	elif funct == "+":
-		num1 = float(to_calculate[1])
-		num2 = float(to_calculate[2])
-		print(add(num1,num2))
+		if len(to_calculate) == 3:
+			num1 = float(to_calculate[1])
+			num2 = float(to_calculate[2])
+			print(add(num1,num2))
+		else:
+			print("Takes two numbers!")
 
 	elif funct == "-":
-		num1 = float(to_calculate[1])
-		num2 = float(to_calculate[2])
-		print(subtract(num1, num2))
+		if len(to_calculate) == 3:
+			num1 = float(to_calculate[1])
+			num2 = float(to_calculate[2])
+			print(subtract(num1, num2))
+		else:
+			print("Takes two numbers!")
 
 	elif funct == "*":
-		num1 = float(to_calculate[1])
-		num2 = float(to_calculate[2])
-		print(multiply(num1, num2))
+		if len(to_calculate) == 3:
+			num1 = float(to_calculate[1])
+			num2 = float(to_calculate[2])
+			print(multiply(num1, num2))
+		else:
+			print("Takes two numbers!")
 
 	elif funct == "/":
-		num1 = float(to_calculate[1])
-		num2 = float(to_calculate[2])
-		print(divide(num1, num2))
+		if len(to_calculate) == 3:
+			num1 = float(to_calculate[1])
+			num2 = float(to_calculate[2])
+			print(divide(num1, num2))
+		else:
+			print("Takes two numbers!")
 
 	elif funct == "square":
-		num1 = float(to_calculate[1])
-		print(square(num1))
+		if len(to_calculate) == 2:
+			num1 = float(to_calculate[1])
+			print(square(num1))
+		else:
+			print("Takes one number!")
 
 	elif funct == "cube":
-		num1 = float(to_calculate[1])
-		print(cube(num1))
+		if len(to_calculate) == 2:
+			num1 = float(to_calculate[1])
+			print(cube(num1))
+		else:
+			print("Takes one number!")
 
 	elif funct == "pow":
 		if len(to_calculate) == 3:
@@ -55,12 +73,17 @@ while True:
 			print("Takes two numbers!")
 
 	elif funct == "mod":
-		num1 = float(to_calculate[1])
-		num2 = float(to_calculate[2])
-		print(mod(num1,num2))
+		if len(to_calculate) == 3:
+			num1 = float(to_calculate[1])
+			num2 = float(to_calculate[2])
+			print(mod(num1,num2))
+		else:
+			print("Takes two numbers!")
 
 	elif funct == "q":
 		break
+	else:
+		print("Nope. Start with an operator or 'q'")
 
 
 
